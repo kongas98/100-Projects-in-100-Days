@@ -1,0 +1,23 @@
+For this one you have to go to https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
+
+
+There you can copy paste the code below to help Reeborg find his way out of the maze
+
+def moving():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+
+while not at_goal():
+    if wall_in_front() and wall_on_right():
+        turn_left()
+        if not wall_in_front():
+            move()
+        else:
+            turn_left()
+    elif wall_on_right():
+        move()
+    else:
+        moving()
+        move()
