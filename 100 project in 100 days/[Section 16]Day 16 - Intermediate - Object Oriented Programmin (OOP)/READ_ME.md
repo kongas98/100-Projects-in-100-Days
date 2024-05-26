@@ -76,7 +76,7 @@ Contains the `MenuItem` and `Menu` classes:
 * **`MenuItem`** models each coffee item with its ingredients and cost.
 * **`Menu`** models the menu with a list of available coffee items and methods to get the items and find a specific drink by name.
 
-### coffee_maker.py
+### `coffee_maker.py`
 
 Contains the CoffeeMaker class, which models the machine that makes the coffee. It includes methods to:
 * Print a report of the current resources.
